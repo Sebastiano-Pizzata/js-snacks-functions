@@ -4,9 +4,20 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
+function parole(){
+    let vocali = 0;
+    for(let i = 0; i <= word.length; i++){
+        if (word.charAt(i) == "a" || word.charAt(i) == "e" || word.charAt(i) == "i" || word.charAt(i) == "o" || word.charAt(i) == "u") {
+            vocali += 1;
+          }
 
+    }
+    return vocali;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
+let numeroVocali = parole();
+console.log(numeroVocali)
 
 
 
